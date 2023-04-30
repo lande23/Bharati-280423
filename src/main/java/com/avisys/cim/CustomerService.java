@@ -4,8 +4,9 @@ import java.util.List;
 
 public interface CustomerService {
 
-	List<Customer> getAllAccountDetails();
-
 	String addCustDetails(Customer e);
+
+	String deleteCustomer(String mob);
+	  List<Customer> getCustomersByCriteria(String firstName, String lastName, String mobile);
 
 }

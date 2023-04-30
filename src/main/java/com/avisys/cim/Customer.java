@@ -10,9 +10,9 @@ import jakarta.persistence.Table;
 @Entity
 @Table(name = "CUSTOMER")
 public class Customer {
-
+	
 	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
+	@GeneratedValue(strategy=GenerationType.AUTO) 
 	private Long id;
 
 	@Column(name = "FIRST_NAME", nullable = false)
@@ -23,6 +23,9 @@ public class Customer {
 
 	@Column(name = "MOBILE_NUMBER", unique = true, nullable = false)
 	private String mobileNumber;
+
+	
+	
 
 	public Long getId() {
 		return id;
